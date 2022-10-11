@@ -1,6 +1,6 @@
 ---
 title: First Post!
-date: 2022-10-11 05:10:11 -4000
+date: 2022-10-11 05:10:11
 categories: [Test]
 tags: [test]     # TAG names should always be lowercase
 author: kchandan
@@ -25,6 +25,8 @@ line segment
 
 
 What beautiful math looks like
+
+
 $$
 F = ma
 $$
