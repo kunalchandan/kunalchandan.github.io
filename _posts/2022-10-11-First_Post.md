@@ -1,8 +1,8 @@
 ---
 title: First Post!
 date: 2022-10-11 01:10:11 -4000
-categories: [Blog, Introduction]
-tags: [intro]     # TAG names should always be lowercase
+categories: [Test]
+tags: [test]     # TAG names should always be lowercase
 author: kchandan
 math: true
 ---
@@ -17,5 +17,14 @@ as observed by this multi-
 line segment
 ```
 
+
+
 ## This is a sub heading
 
+# This is the second chapter
+
+
+What beautiful math looks like
+$$
+F = ma
+$$
