@@ -16,4 +16,4 @@ I tried to format the code such that there was a template file and an actual con
 See the [repo at my github](https://github.com/kunalchandan/resume)
 
 and the preview
-![preview](https://github.com/kunalchandan/resume/blob/b1c9427484d8de7ff6ac0167571c43b6367bac86/resume-1.png)
+![preview](https://github.com/kunalchandan/resume/blob/main/resume-1.png?raw=true)
