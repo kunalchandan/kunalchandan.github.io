@@ -8,7 +8,7 @@ Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installat
 ## Installation
 Clone it to local machine and run:
 
-```
+```bash
 bundle
 ```
 
@@ -18,11 +18,11 @@ See the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#document
 
 Summary:
 
-```
+```bash
 bundle exec jekyll s
 
 ```
-And open: 
+And open:
 ```
 [http://localhost:4000](http://localhost:4000)
 ```
