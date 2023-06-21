@@ -1,6 +1,6 @@
 ---
 title: Golang Refresher
-date: 2023-05-17 20:00:00
+date: 2023-06-17 20:00:00
 categories: [projects]
 tags: [personal-projects]
 author: kchandan
