@@ -59,7 +59,7 @@ collect2: error: ld returned 1 exit status
 
 I think I'll try one other GUI library then switch off if required.
 
-Just tried fyne and I hit the exact same issue. I think this might be something more inherent to Golang itself. I don't really want to switch off of WSL. :(
+Just tried fyne and I hit the exact same issue. I think this might be something more inherent to Golang/The Golang compiler/linker itself. I don't really want to switch off of WSL. :(
 
 So now I'm just displaying things to the console.
 
@@ -67,89 +67,99 @@ So now I'm just displaying things to the console.
 Initializing scoring matrix
 Scoring...
 Drawing Score Matrix
-     Ad  Th  Cy  Ad
-Ad    0  -2  -4  -6
-Th   -2   1  -1  -3
-Cy   -4  -1   2   0
-Gu   -6  -3   0   1
+         Ad  Th  Cy  Ad
+      0  -2  -4  -6  -8
+Ad   -2   1  -1  -3  -5
+Th   -4  -1   2   0  -2
+Cy   -6  -3   0   3   1
+Gu   -8  -5  -2   1   2
 Drawing Direction Matrix
-   Ad Th Cy Ad
-Ad  \  -  -  -
-Th  |  \  -  -
-Cy  |  |  \  -
-Gu  |  |  |  \
+      Ad Th Cy Ad
+    \  -  -  -  -
+Ad  |  \  -  -  \
+Th  |  |  \  -  -
+Cy  |  |  |  \  -
+Gu  |  |  |  |  \
 Sequences 1 and 2
 atcg
 atca
 Alignment Scores
-4
-4
+8
+8
+atcg
+atca
 -------------------------
 -------------------------
 -------------------------
 Initializing scoring matrix
 Scoring...
 Drawing Score Matrix
-     Gu  Ad  Th  Th  Ad  Cy  Ad
-Gu    0  -2  -4  -6  -8 -10 -12
-Cy   -2  -1  -3  -5  -7  -7  -9
-Ad   -4  -1  -2  -4  -4  -6  -6
-Th   -6  -3   0  -1  -3  -5  -7
-Gu   -8  -5  -2  -1  -2  -4  -6
-Cy  -10  -7  -4  -3  -2  -1  -3
-Gu  -12  -9  -6  -5  -4  -3  -2
+         Gu  Ad  Th  Th  Ad  Cy  Ad
+      0  -2  -4  -6  -8 -10 -12 -14
+Gu   -2   1  -1  -3  -5  -7  -9 -11
+Cy   -4  -1   0  -2  -4  -6  -6  -8
+Ad   -6  -3   0  -1  -3  -3  -5  -5
+Th   -8  -5  -2   1   0  -2  -4  -6
+Gu  -10  -7  -4  -1   0  -1  -3  -5
+Cy  -12  -9  -6  -3  -2  -1   0  -2
+Gu  -14 -11  -8  -5  -4  -3  -2  -1
 Drawing Direction Matrix
-   Gu Ad Th Th Ad Cy Ad
-Gu  \  -  -  -  -  -  -
-Cy  |  \  \  \  \  \  -
-Ad  |  \  \  \  \  -  \
-Th  |  |  \  \  -  \  \
-Gu  |  |  |  \  \  \  \
-Cy  |  |  |  \  \  \  -
-Gu  |  |  |  \  \  \  \
+      Gu Ad Th Th Ad Cy Ad
+    \  -  -  -  -  -  -  -
+Gu  |  \  -  -  -  -  -  -
+Cy  |  |  \  \  \  \  \  -
+Ad  |  |  \  \  \  \  -  \
+Th  |  |  |  \  \  -  \  \
+Gu  |  \  |  |  \  \  \  \
+Cy  |  |  |  |  \  \  \  -
+Gu  |  \  |  |  \  \  \  \
 Sequences 1 and 2
 gcatgcg
 gattaca
 Alignment Scores
--9
--9
+-2
+-2
+gcatgcg
+gattaca
 -------------------------
 -------------------------
 -------------------------
 Initializing scoring matrix
 Scoring...
 Drawing Score Matrix
-     Gu  Gu  Gu  Gu  Gu  Ad  Ad  Ad  Ad  Ad  Ad  Gu  Gu  Gu  Gu  Gu  Gu
-Gu    0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28 -30 -32
-Gu   -2   1  -1  -3  -5  -7  -9 -11 -13 -15 -17 -19 -21 -23 -25 -27 -29
-Gu   -4  -1   2   0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20 -22 -24 -26
-Gu   -6  -3   0   3   1  -1  -3  -5  -7  -9 -11 -13 -15 -17 -19 -21 -23
-Gu   -8  -5  -2   1   4   2   0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20
-Gu  -10  -7  -4  -1   2   3   1  -1  -3  -5  -7  -7  -9 -11 -13 -15 -17
-Gu  -12  -9  -6  -3   0   1   2   0  -2  -4  -6  -6  -6  -8 -10 -12 -14
-Gu  -14 -11  -8  -5  -2  -1   0   1  -1  -3  -5  -5  -5  -5  -7  -9 -11
-Gu  -16 -13 -10  -7  -4  -3  -2  -1   0  -2  -4  -4  -4  -4  -4  -6  -8
-Gu  -18 -15 -12  -9  -6  -5  -4  -3  -2  -1  -3  -3  -3  -3  -3  -3  -5
-Gu  -20 -17 -14 -11  -8  -7  -6  -5  -4  -3  -2  -2  -2  -2  -2  -2  -2
-Gu  -22 -19 -16 -13 -10  -9  -8  -7  -6  -5  -4  -1  -1  -1  -1  -1  -1
-Gu  -24 -21 -18 -15 -12 -11 -10  -9  -8  -7  -6  -3   0   0   0   0   0
-Gu  -26 -23 -20 -17 -14 -13 -12 -11 -10  -9  -8  -5  -2   1   1   1   1
+         Gu  Gu  Gu  Gu  Gu  Ad  Ad  Ad  Ad  Ad  Ad  Gu  Gu  Gu  Gu  Gu  Gu
+      0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28 -30 -32 -34
+Gu   -2   1  -1  -3  -5  -7  -9 -11 -13 -15 -17 -19 -21 -23 -25 -27 -29 -31
+Gu   -4  -1   2   0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20 -22 -24 -26 -28
+Gu   -6  -3   0   3   1  -1  -3  -5  -7  -9 -11 -13 -15 -17 -19 -21 -23 -25
+Gu   -8  -5  -2   1   4   2   0  -2  -4  -6  -8 -10 -12 -14 -16 -18 -20 -22
+Gu  -10  -7  -4  -1   2   5   3   1  -1  -3  -5  -7  -9 -11 -13 -15 -17 -19
+Gu  -12  -9  -6  -3   0   3   4   2   0  -2  -4  -6  -6  -8 -10 -12 -14 -16
+Gu  -14 -11  -8  -5  -2   1   2   3   1  -1  -3  -5  -5  -5  -7  -9 -11 -13
+Gu  -16 -13 -10  -7  -4  -1   0   1   2   0  -2  -4  -4  -4  -4  -6  -8 -10
+Gu  -18 -15 -12  -9  -6  -3  -2  -1   0   1  -1  -3  -3  -3  -3  -3  -5  -7
+Gu  -20 -17 -14 -11  -8  -5  -4  -3  -2  -1   0  -2  -2  -2  -2  -2  -2  -4
+Gu  -22 -19 -16 -13 -10  -7  -6  -5  -4  -3  -2  -1  -1  -1  -1  -1  -1  -1
+Gu  -24 -21 -18 -15 -12  -9  -8  -7  -6  -5  -4  -3   0   0   0   0   0   0
+Gu  -26 -23 -20 -17 -14 -11 -10  -9  -8  -7  -6  -5  -2   1   1   1   1   1
+Gu  -28 -25 -22 -19 -16 -13 -12 -11 -10  -9  -8  -7  -4  -1   2   2   2   2
 Drawing Direction Matrix
-   Gu Gu Gu Gu Gu Ad Ad Ad Ad Ad Ad Gu Gu Gu Gu Gu Gu
-Gu  \  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-Gu  |  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
-Gu  |  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
-Gu  |  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
-Gu  |  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
-Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+      Gu Gu Gu Gu Gu Ad Ad Ad Ad Ad Ad Gu Gu Gu Gu Gu Gu
+    \  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+Gu  |  \  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  -  -  -  -  -  -  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
+Gu  |  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \  \
 Gap in left sequence
 Gap in left sequence
 Gap in left sequence
@@ -157,6 +167,11 @@ Sequences 1 and 2
 ggggggggggggggggg
 ggggg===aaagggggg
 Alignment Scores
--11
--11
+6
+6
+ggggggggggggggggg
+ggggg===aaagggggg
 ```
+
+Now since sequences are generally of variable length of 100s of base pairs and we will generally only be sequencing thousands to millions of sequences, we are gonna want to hash each of the sequences. I'm gonna use a NCHF specifically FNV 64bit since it's not that big of a deal, but I could similarly substitute for SHA256 later.
+
