@@ -8,7 +8,9 @@ math: true
 ---
 
 # Panel Interview Prep
+
 Chill chat with Daniel Arias
+
 - Getting info about compensation etc.
 - Software Engineering role or Site Reliability Engineer role
 - Jeremy liked my last interview/round 1 technical
@@ -20,6 +22,7 @@ Chill chat with Daniel Arias
 - Jeremy's boss AD, aydee?
 
 Next round:
+
 - Topics:
   - Databases
   - SDLCs
@@ -39,13 +42,14 @@ Asked about TN visa process.
 
 Receiving immigration assessment.
 
-
 Timeline:
+
 - ASAP
 - Cannot extend offer until the first week of July
 - After headcount review
 
 Compensation levels:
+
 - Targeting high P3 most likely P2
 - Can exercise stock after 4 years
 - Yearly review for compensation
@@ -55,12 +59,13 @@ Compensation levels:
 # Panel Interview
 
 ## Interviewer 1 - Paul Leimer
-pleimer@tesla.com
+<pleimer@tesla.com>
 Asked question about containers:
 
 During the question we want the container objects to store a location and a mapping of objects and their counts as well as a reference to some number of sub-containers that you can add to a parent container.
 
 The following functions were requested to be implemented:
+
 - Add a container to a parent container
   - Just gets added to a list of containers
 - Move a container (and sub containers to a location)
@@ -71,10 +76,7 @@ The following functions were requested to be implemented:
 Implementation was completed with 1.5 minutes to spare. Asked to write some test, but that just wasn't enough time.
 
 ## Interviewer 2 - Ganesh Kurcheti
-jalkarawi@tesla.com
-
-
-
+<jalkarawi@tesla.com>
 
 ```
 # [8,9,10] n=1
@@ -128,10 +130,12 @@ sort the counts per user
 ```
 
 ## Interviewer 3 Jhilan Alkarawi
-jalkarawi@tesla.com
+<jalkarawi@tesla.com>
+
 - Brief intro
 
 Create a tree from a list of nodes.
+
 ```
 from functools import reduce
 import operator
