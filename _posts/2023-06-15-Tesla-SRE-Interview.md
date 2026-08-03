@@ -1,6 +1,6 @@
 ---
 title: Tesla SRE Interview
-# date: 2023-06-15 14:00:00
+date: 2023-06-15 14:00:00
 categories: [interviews]
 tags: [interview, tesla, software]
 author: kchandan

@@ -1,5 +1,6 @@
 ---
 title: AMD Systems Interview
+date: 2024-05-28 20:00:00
 categories: [interviews]
 tags: [interview, amd, software]
 author: kchandan
